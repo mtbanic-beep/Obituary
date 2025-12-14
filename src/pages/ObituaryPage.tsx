@@ -4,13 +4,10 @@ import { Hero } from "@/sections/Hero";
 import { MainContent } from "@/sections/MainContent";
 
 export const ObituaryPage = () => {
-  const { slug } = useParams();
+  const { slug } = useParams<{ slug: string }>();
 
   useEffect(() => {
-    if (slug) {
-      document.title =
-        slug.replace(/-/g, " ") + " – Obituary";
-    }
+    if (slug) document.title = `${slug.replace(/-/g, " ")} – Obituary`;
   }, [slug]);
 
   return (
