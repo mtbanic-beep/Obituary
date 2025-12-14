@@ -9,20 +9,8 @@ import { ObituaryPage } from "./pages/ObituaryPage";
 
 export const App = () => {
   return (
-    <Router>
-      <div className="min-h-screen bg-[#fafafa]">
-        <Navbar />
-
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/obituaries/Rhonda-Mary-Olson" element={<ObituaryPage />} />
-        </Routes>
-
-        <Footer />
-        <FloatingButtons />
-        <AccessibilityWidget />
-        <CookiePreferences />
-      </div>
-    </Router>
+    <div style={{ padding: 40, fontSize: 24 }}>
+      App is rendering ✅
+    </div>
   );
 };
