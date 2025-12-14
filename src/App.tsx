@@ -15,7 +15,7 @@ export const App = () => {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/obituaries/:slug" element={<ObituaryPage />} />
+          <Route path="/obituaries/Rhonda-Mary-Olson" element={<ObituaryPage />} />
         </Routes>
 
         <Footer />
