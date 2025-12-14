@@ -17,9 +17,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route
-              path="/obituaries/Rhonda-Mary-Olson"
-              element={<ObituaryPage />}
-            />
+              <Route path="/obituaries/:slug" element={<ObituaryPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </div>
