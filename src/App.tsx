@@ -7,25 +7,22 @@ import { CookiePreferences } from "./components/CookiePreferences";
 import { HomePage } from "./pages/HomePage";
 import { ObituaryPage } from "./pages/ObituaryPage";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./sections/Navbar";
-import { Footer } from "./sections/Footer";
-import { FloatingButtons } from "./components/FloatingButtons";
-import { AccessibilityWidget } from "./components/AccessibilityWidget";
-import { CookiePreferences } from "./components/CookiePreferences";
-import { HomePage } from "./pages/HomePage";
-import { ObituaryPage } from "./pages/ObituaryPage";
-
-export const App = () => {
+const App = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-[#fafafa]">
+      <div className="min-h-screen bg-[#fafafa] flex flex-col">
         <Navbar />
 
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/obituaries/Rhonda-Mary-Olson" element={<ObituaryPage />} />
-        </Routes>
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/obituaries/Rhonda-Mary-Olson"
+              element={<ObituaryPage />}
+            />
+            <Route path="*" element={<HomePage />} />
+          </Routes>
+        </div>
 
         <Footer />
         <FloatingButtons />
@@ -35,3 +32,5 @@ export const App = () => {
     </Router>
   );
 };
+
+export default App;
