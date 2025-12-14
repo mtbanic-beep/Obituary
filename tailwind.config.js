@@ -1,5 +1,19 @@
 module.exports = {
   content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      // keep all your existing extend stuff
+    },
+    // keep the rest
+  },
+  plugins: [],
+  darkMode: ["class"],
+};
+module.exports = {
+  content: [
     "./src/**/*.{html,js,ts,jsx,tsx}",
     "app/**/*.{ts,tsx}",
     "components/**/*.{ts,tsx}",
