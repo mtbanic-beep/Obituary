@@ -1,4 +1,4 @@
-export const FamilyLoginSection = () => {
+export const FamilyLoginSection = () => null;
   return (
     <div className="bg-[#e5e5e5] text-center px-[45px] py-[30px] lg:py-12 font-lato">
       <div className="max-w-[1370px] w-full mx-auto px-[15px]">
