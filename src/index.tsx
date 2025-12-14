@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { App } from "./App";
+import App from "./App";
 
 // make sure your styles load (adjust if your file name differs)
 import "../tailwind.css"; // if tailwind.css is in project root
