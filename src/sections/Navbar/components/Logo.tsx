@@ -1,22 +1,12 @@
+import logo from "@/assets/logo.webp";
+
 export const Logo = () => {
   return (
-    <a
-      href="https://www.mhfh.com/"
-      aria-label="Go to McInnis & Holloway Funeral Homes home page"
-      className="block flex-shrink-0 relative z-50"
-    >
+    <a href="https://www.mhfh.com/" className="block flex-shrink-0">
       <img
-        src="https://c.animaapp.com/mj3qzcubLRevs0/assets/d490bcf7-231c-4a5e-85fc-22dd769b40da_thumbnail.webp"
+        src={logo}
         alt="McInnis & Holloway Funeral Homes"
-        className="
-          h-[80px]
-          lg:h-[110px]
-          xl:h-[135px]
-          object-contain
-          opacity-100
-          filter-none
-          mix-blend-normal
-        "
+        className="h-[80px] lg:h-[110px] xl:h-[135px] object-contain"
       />
     </a>
   );
