@@ -16,7 +16,6 @@ const App = () => {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route
               <Route path="/obituaries/:slug" element={<ObituaryPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
