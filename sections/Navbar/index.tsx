@@ -1,5 +1,5 @@
-import { TopBar } from "@/sections/Navbar/components/TopBar";
-import { MainNav } from "@/sections/Navbar/components/MainNav";
+import { TopBar } from "./sections/Navbar/components/TopBar";
+import { MainNav } from "./sections/Navbar/components/MainNav";
 
 export const Navbar = () => {
   return (
