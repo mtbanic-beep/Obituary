@@ -12,10 +12,12 @@ export const App = () => {
     <Router>
       <div className="min-h-screen bg-[#fafafa]">
         <Navbar />
+
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/obituaries/Rhonda-Mary-Olson" element={<ObituaryPage />} />
+          <Route path="/obituaries/:slug" element={<ObituaryPage />} />
         </Routes>
+
         <Footer />
         <FloatingButtons />
         <AccessibilityWidget />
