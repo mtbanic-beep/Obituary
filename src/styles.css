@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
+/* Tailwind must come first */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* keep the rest of your existing CSS below this line */
-
+/* Global reset (THIS WAS BROKEN BEFORE) */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
