@@ -1,23 +1,10 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {
-      // keep all your existing extend stuff
-    },
-    // keep the rest
-  },
-  plugins: [],
   darkMode: ["class"],
-};
-module.exports = {
-  content: [
-    "./src/**/*.{html,js,ts,jsx,tsx}",
-    "app/**/*.{ts,tsx}",
-    "components/**/*.{ts,tsx}",
-  ],
   theme: {
     extend: {
       colors: {
@@ -61,45 +48,11 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: [
-          "Lato",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
-        "lato": ["Lato", "sans-serif"],
-        "open_sans": ["Open Sans", "sans-serif"],
-        "source_sans_pro": ["Source Sans 3", "sans-serif"],
-        "source_serif_pro": ["Source Serif 4", "serif"],
+        sans: ["Lato", "ui-sans-serif", "system-ui", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        open_sans: ["Open Sans", "sans-serif"],
       },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-    },
-    container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
-    screens: {
-      'sm': '640px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
     },
   },
   plugins: [],
-  darkMode: ["class"],
 };
