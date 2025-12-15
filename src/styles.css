@@ -52,7 +52,8 @@ body {
   text-decoration: none;
 }
 
-.top-link:hover, .phone-info a:hover {
+.top-link:hover,
+.phone-info a:hover {
   text-decoration: underline;
 }
 
