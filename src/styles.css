@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-/* Tailwind must come first */
+/* Tailwind layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Lato", "Open Sans", sans-serif;
   line-height: 1.6;
@@ -19,6 +24,7 @@ body {
   background-color: #fff;
 }
 
+/* Layout helpers */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,13 +36,13 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #fff;
+  background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .top-bar {
   background-color: #576037;
-  color: #fff;
+  color: #ffffff;
   padding: 10px 0;
 }
 
@@ -49,7 +55,7 @@ body {
 
 .top-link,
 .phone-info a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -71,4 +77,22 @@ body {
 
 .logo img {
   height: 85px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
 }
